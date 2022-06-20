@@ -1,5 +1,6 @@
-executer.c	    Makefile   microshell    microshell.h  my	 testmy.sh
-get_command_list.c  microsh.c  microshell.c  microsome	   some  test.sh
+executer.c          microsh     microshell.c  my         testmy.sh
+get_command_list.c  microsh.c   microshell.h  README.md  test.sh
+Makefile            microshell  microsome     some
 #include "microshell.h"
 
 int ft_strlen(char *str)
@@ -180,3 +181,49 @@ dernier
 error: cannot execute /usr/bin/grep
 dernier
 ftest
+ftest
+ftewerwerwerst
+werwerwer
+qweqweqweqew
+qwewqeqrtregrfyukui
+/bin/ls: cannot access 'ftest': No such file or directory
+executer.c          microsh     microshell.c  my         testmy.sh
+get_command_list.c  microsh.c   microshell.h  README.md  test.sh
+Makefile            microshell  microsome     some
+/bin/ls: cannot access 'werwer': No such file or directory
+microshell.c
+/bin/ls: cannot access 'subject.fr.txt': No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+error: cannot execute /usr/bin/grep
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute blah
+OK
+error: cannot execute blah
+OK
+error: cannot execute blah
+OK

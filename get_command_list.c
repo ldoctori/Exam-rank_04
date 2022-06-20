@@ -57,6 +57,8 @@ t_cmd   *get_command_list(char **argv, char **envp)
     start = cmd = get_command(argv, envp, args_num);
     if (!start)
         return (NULL);
+    while (*argv && ( strcmp(*argv, "|") == 0 || strcmp(*argv, ";") == 0))
+        argv++;
     argv += args_num;
     while (*argv)
     {

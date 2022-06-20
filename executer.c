@@ -57,21 +57,14 @@ void    fd_duplicate(int **fd, int i, t_cmd *cmd)
 
 void    close_wait_free(int **fd, int *pid, int n)
 {
-    int exit_status;
-
     int i = 0;
+
     while (i < n - 1)
     {
         close(fd[i][0]);
-        close(fd[i][1]);
         i++;
     }
     i = 0;
-    while (i < n)
-    {
-        waitpid(pid[i], &exit_status, 0);
-        i++;
-    }
     free_fd_pid(fd, pid, n);
 }
 
@@ -101,15 +94,15 @@ void    executer(t_cmd *cmd)
                 fd_duplicate(fd, i, cmd);
                 if (execve(cmd->cmd_args[0], cmd->cmd_args, cmd->envp) == -1)
                 {
-                    write(2, "cannot execute ", 15);
+                    write(2, "error: cannot execute ", 23);
                     write(2, cmd->cmd_args[0], ft_strlen(cmd->cmd_args[0]));
                     write(2, "\n", 1);
                     exit(EXIT_FAILURE);
                 }
             }
-            else {
-                waitpid
-            }
+            if (i < cmd->cmd_number - 1)
+                close(fd[i][1]);
+            waitpid(pid[i], NULL, 0);
             i++;
         }
         cmd = cmd->next;
